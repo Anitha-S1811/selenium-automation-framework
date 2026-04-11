@@ -20,6 +20,7 @@ public class FirstTest {
         String title = driver.getTitle();
         System.out.println(title);
         System.out.println("Title" + driver.getCurrentUrl());
+        System.out.println("-------" + driver.getPageSource());
         driver.getPageSource(); //returns entire page as html
         Assert.assertEquals(title, "Swag Labs");
     }
